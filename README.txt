@@ -12,5 +12,5 @@ For admin login:
 	password - 1234aman
 
 
-Please tell us the faults since we couldn't do proper testing
+Please note that the project has not been tested and may have a few errors.
 
