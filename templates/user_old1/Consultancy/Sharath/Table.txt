@@ -1,0 +1,24 @@
+host=localhost
+username = root
+password = ""
+database name = test
+
+
+commands:
+
+use test;
+
+    create table consultancy (
+consultancyid int not null auto_increment primary key,
+client varchar(80) not null,
+title varchar(80) not null,
+sdate date not null,
+cdate date,
+f1 varchar(50) not null,
+f2 varchar(50),
+f3 varchar(50),
+revenue varchar(15) not null,
+summary varchar(100),
+labs varchar(100),
+url varchar(40),
+others varchar(100));

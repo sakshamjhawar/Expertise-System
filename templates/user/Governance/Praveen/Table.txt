@@ -1,0 +1,19 @@
+host=localhost
+username = root
+password = ""
+database name = test
+
+
+commands:
+
+use test;
+
+    create table governance (
+committee_id int not null auto_increment primary key,
+name_of_committee varchar(80) not null,
+status_of_committee varchar(80) not null,
+service_from date not null,
+service_to date,
+role varchar(80) not null,
+responsibility varchar(80),
+additional_info varchar(80));
