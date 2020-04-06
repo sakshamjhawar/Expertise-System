@@ -1,65 +1,0 @@
-[1mdiff --git a/css/style.css b/css/style.css[m
-[1mindex 4611c6b..a4907a7 100755[m
-[1m--- a/css/style.css[m
-[1m+++ b/css/style.css[m
-[36m@@ -888,7 +888,7 @@[m [mbody{[m
- 	margin-top:1em[m
- }[m
- [m
-[31m-.profile_photo a {[m
-[32m+[m[32m.edit_button {[m[41m[m
-    position: absolute;[m
-    display: block;[m
-    background: url(../images/edit_button.png);[m
-[1mdiff --git a/templates/user/Main.php b/templates/user/Main.php[m
-[1mindex a757b12..6b8b01a 100755[m
-[1m--- a/templates/user/Main.php[m
-[1m+++ b/templates/user/Main.php[m
-[36m@@ -368,6 +368,8 @@[m [m$("#menu_5").click(function()[m
- 	[m
- 	});[m
- });[m
-[32m+[m[41m[m
-[32m+[m[41m[m
- 	[m
- [m
- </script>[m
-[36m@@ -428,8 +430,36 @@[m [m$("#menu_5").click(function()[m
- 	</div>[m
-     <div class="profile_photo">[m
-     	<img src="../../images/test.jpg" height="120" width="120"/>[m
-[31m-    	<a href="#"></a>[m
-[31m-	</div>[m
-[32m+[m[41m    [m	[32m<button onclick="input_trigger()" class="edit_button"></button>[m[41m[m
-[32m+[m[32m        <form[m[41m [m
-[32m+[m[32m        <input type="file" id="profile_picture_input" hidden="true" onchange="change_profile_picture(this.id)"/>[m[41m[m
-[32m+[m[41m	[m
-[32m+[m[41m    [m	[32m<script>[m[41m[m
-[32m+[m			[32mfunction input_trigger()[m[41m[m
-[32m+[m			[32m{[m[41m[m
-[32m+[m				[32m//alert("hi");[m[41m[m
-[32m+[m				[32m$('#profile_picture_input').trigger('click');[m[41m	[m
-[32m+[m			[32m}[m[41m[m
-[32m+[m[41m			[m
-[32m+[m			[32mfunction change_profile_picture(str)[m[41m[m
-[32m+[m			[32m{[m[41m[m
-[32m+[m				[32m$.ajax({[m[41m[m
-[32m+[m					[32murl: "../../php/image/profile_picture.php", // Url to which the request is send[m[41m[m
-[32m+[m					[32mtype: "POST",             // Type of request to be send, called as method[m[41m[m
-[32m+[m					[32mdata: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)[m[41m[m
-[32m+[m					[32mcontentType: false,       // The content type used when sending data to the server.[m[41m[m
-[32m+[m					[32mcache: false,             // To unable request pages to be cached[m[41m[m
-[32m+[m					[32mprocessData:false,        // To send DOMDocument or non processed data file it is set to false[m[41m[m
-[32m+[m					[32msuccess: function(data)   // A function to be called if request succeeds[m[41m[m
-[32m+[m					[32m{[m[41m[m
-[32m+[m						[32m$('#loading').hide();[m[41m[m
-[32m+[m						[32m$("#message").html(data);[m[41m[m
-[32m+[m					[32m}[m[41m[m
-[32m+[m				[32m});[m[41m[m
-[32m+[m			[32m}[m[41m[m
-[32m+[m		[32m</script>[m[41m[m
-[32m+[m[41m    [m
-[32m+[m[32m    </div>[m[41m[m
-     </div>[m
- [m
- 	<div class="div_sub_main">[m

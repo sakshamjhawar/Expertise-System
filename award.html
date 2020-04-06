@@ -1,0 +1,187 @@
+<!-- DOCTYPE HTML -->
+<html>
+<head>
+<title>
+Award Details
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-32"><b>Enter<br>Details</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="faculty_home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="faculty.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Faculty Details</a> 
+<a href="non.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Technical Faculty Details</a> 
+    <a href="course.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course</a> 
+    <a href="award.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Awards</a> 
+    <a href="doctor.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Doctorate</a> 
+    <a href="consultancy.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Consultancy</a>
+    <a href="patent.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Patent</a>
+    <a href="invited_talk.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Invited Talk</a>
+    <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project</a>
+    <a href="workshop.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop</a>
+    <a href="paper.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Paper</a>
+    <br>
+    <br>
+    <span class="Logout_span">
+    		
+    		<center><a href="main.html" style="colour:#fff;">LOGOUT</a> </center>
+    		</span>
+  </div>
+</nav>
+
+<style>
+body {
+    background-color: #d3d3d3;
+}
+header{
+		background: #ffffff;
+		}
+h3   {color:Black;
+		font-family: 'Bree Serif', serif;
+	    font-size: 26px;	
+		position:relative
+padding: 12px 20px;
+}
+
+	
+
+</style>
+</head>
+<body>
+<b><h3 align = "center">FACULTY AWARD ENTRY</h3>
+
+<div style="text-align: center"><img src="RVCE_New_Logo.jpg" width="100" height ="100" /></div>
+</header>
+<br>
+<br>
+<fieldset>
+<legend align="center"><b>AWARD DETAILS</legend>
+<form action="award.php" method="POST">
+<div align="center">
+<table width="450px">
+
+
+<div name="Award_name">
+<tr>
+ <td valign="top">
+  <b><label for="Award name">Award_name</label>
+ </td>
+ <td valign="top">
+  <input  type="text" placeholder="" name="Award_name" maxlength="50" size="20">
+ <br><br><br>
+ </td>
+</tr>
+</div>
+
+<div name="Agency">
+ <tr>
+ <td valign="top">
+  <b><label for="Agency">Agency</label>
+ </td>
+ <td valign="top">
+  <input  type="text" placeholder="" name="Agency" maxlength="4" size="5">
+ <br><br><br>
+ </td>
+</tr>
+</div>
+
+<div name="A_year">
+<tr>
+ <td valign="top">
+  <b><label for="Recieving Year">A_year</label>
+ </td>
+ <td valign="top"> 
+  <input  type="text" name="A_year" placeholder="" maxlength="4" size="5">
+ <br><br><br>
+ </td>
+</tr>
+</div>
+
+
+
+<div name="url">
+<tr>
+ <td valign="top">
+  <b><label for="Url">url </label>
+ </td>
+ <td valign="top">
+  <input  type="text" placeholder="" name="url" maxlength="30" size="30">
+ <br><br><br>
+ </td>
+</tr>
+</div>
+
+<div name="ESSN">
+<tr>
+ <td valign="top">
+  <b><label for="ESSN">Essn</label>
+ </td>
+ <td valign="top">
+  <input  type="text" placeholder="" name="ESSN" maxlength="50" size="20">
+ <br><br><br>
+ </td>
+</tr>
+</div>
+<div>
+<tr>
+ <td valign="top">
+SELECT FILE TO UPLOAD:
+<input required type="file" name="file" id="file" style="font-color:blue; position:absolute; top:100%; left: 40%;width:50%;">
+</td>
+</tr>
+</div>
+
+<div>
+<tr>
+ <td valign="top">
+<br>
+<br>
+SELECT IMAGE TO UPLOAD:
+<input type="file" name="fileToUpload" id="fileToUpload" style="font-color:blue; position:absolute; top:115%; left: 40%;width:50%;">
+</td>
+</tr>
+</div>
+
+
+
+
+
+<div name="Submit" align="center">
+<tr>
+ <td valign="top">
+ </td>
+ <td valign="top">
+<br>
+<br>
+  <input  type="Submit" name="Submit Details" class="btn register">
+  <br><br><br>
+ </td>
+</tr>
+</div>
+</table>
+</div>
+</form>
+</fieldset>
+
+<hr>
+</body>
+</html>
+
+
+
+
+

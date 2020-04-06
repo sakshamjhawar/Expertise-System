@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>FES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+<div class="w3-bar w3-black w3-card-2">
+<h2><b>FACULTY EXPERTISE SYSTEM</b></h2>
+<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+<a href="#faculty" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FACULTY</a>
+<a href="#admin" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ADMIN</a>
+<a href="#newuser" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEW USER</a>
+<div class="w3-dropdown-hover w3-hide-small">
+<div class="w3-dropdown-content w3-bar-block w3-card-4">
+</div>
+</div>
+</div>
+</div>
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+</div>
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<img src="college.jpg" style="width:100%">
+<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+</div>
+</div>
+<div class="w3-white" style="padding:124px 48px">
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="faculty">
+<div class="w3-row w3-padding-32">
+<div class="w3-third">
+</div>
+</div>
+</div>
+
+ <div class="w3-black" id="faculty">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+<div class="login">
+<h1>FACULTY LOGIN</h1>
+<form method="post" action="faculty_login.php">    
+<input type="text" name="uname" placeholder="Username" required="required" />
+<input type="password" name="pword" placeholder="Password" required="required" />
+<input id="button" type="submit" class="btn btn-primary btn-block btn-large" name="submit" value="Submit">
+</form>
+</div>
+</div>
+</div>
+</div>
+   
+<div class="w3-white" style="padding:100px 48px"> 
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="admin">  
+<div class="w3-row w3-padding-32">
+<div class="w3-third">
+</div>
+</div>
+</div>
+
+<div class="w3-black" id="admin">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+<div class="login">
+<h1>ADMIN LOGIN</h1>
+<form method="post" action="admin.php">
+<input type="text" name="uname" placeholder="Username" required="required" />
+<input type="password" name="pword" placeholder="Password" required="required" />
+<button type="submit" class="btn btn-primary btn-block btn-large">LOGIN.</button>
+</form>      
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="w3-white" style="padding:124px 48px">
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="admin">
+<div class="w3-row w3-padding-32">
+<div class="w3-third">
+</div>
+</div>
+</div>
+
+ <div class="w3-black" id="newuser">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+<div class="login">
+<h1>NEW USER LOGIN</h1>
+<form method="post" action="newuser.php">    
+<input id="nbutton" type="submit" class="btn btn-primary btn-block btn-large" name="submit" value="Click Here">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
